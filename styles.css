@@ -1,0 +1,30 @@
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#57534e;--line:#e7e5e4;--accent:#0f766e;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#0c0a09;--fg:#e7e5e4;--muted:#a8a29e;--line:#292524;--accent:#2dd4bf;--card:#1c1917}}
+*{box-sizing:border-box}
+html{color-scheme:light dark}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:720px;margin:0 auto;padding:56px 24px 72px}
+h1{font-size:2.1rem;line-height:1.15;margin:0 0 6px;letter-spacing:-.01em}
+.role{font-size:1.15rem;margin:0 0 4px}
+.meta{color:var(--muted);margin:0 0 22px}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 44px;padding:0;list-style:none}
+.links a{display:inline-block;padding:9px 15px;border:1px solid var(--line);border-radius:8px;color:var(--fg);text-decoration:none;font-weight:500;background:var(--card)}
+.links a:hover{border-color:var(--accent);color:var(--accent)}
+.links a.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.links a.primary:hover{color:#fff;opacity:.9}
+section{margin:0 0 44px}
+h2{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 14px;font-weight:600}
+p{margin:0 0 12px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.card h3{margin:0 0 6px;font-size:1rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.timeline{list-style:none;margin:0;padding:0}
+.timeline li{display:grid;grid-template-columns:160px 1fr;gap:12px;padding:11px 0;border-top:1px solid var(--line)}
+.timeline li:last-child{border-bottom:1px solid var(--line)}
+.timeline time{color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap;font-size:.95rem}
+.timeline strong{display:block}
+.timeline span{color:var(--muted);font-size:.95rem}
+footer{color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);padding-top:20px}
+a{color:var(--accent)}
+@media (max-width:560px){.grid{grid-template-columns:1fr}.timeline li{grid-template-columns:1fr;gap:2px}h1{font-size:1.8rem}}
